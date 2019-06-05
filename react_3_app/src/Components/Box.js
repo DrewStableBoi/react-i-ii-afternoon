@@ -10,7 +10,7 @@ function Box(props) {
     return (
       <div className = "box">
 
-              <div className = "counterCorner"> {props.displayCounter}/25 </div>
+              <div className = "counterCorner"> {props.counter + 1}/{props.datalength} </div>
 
       <h1 className = "name" style = {nameStyle} >Name: {props.person.name.first} {props.person.name.last}</h1>
 

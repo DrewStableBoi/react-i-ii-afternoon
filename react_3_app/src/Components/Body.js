@@ -24,12 +24,13 @@ function Body(props) {
         <div className = "body">
                 <Box person = {props.person}
                      counter = {props.counter}
-                     displayCounter = {props.displayCounter}/>
+                     displayCounter = {props.displayCounter}
+                     datalength = {props.datalength}/>
                 <h1 className = "fixButtons">
                     <button className = "button" onClick = {props.handleClickPrevious} style = {nextAndPreviousStyle}> {'<'} Previous </button>
                     <button className = "button" onClick = {props.handleClickEdit} style = {otherButtonStyle}> Edit</button>
                     <button className = "button" onClick = {props.handleClickDelete} style = {otherButtonStyle}> Delete</button>
-                    <button className = "button" onClick = {props.handleClickDelete} style = {otherButtonStyle}> New</button>
+                    <button className = "button" onClick = {props.handleClickNew} style = {otherButtonStyle}> New</button>
                     <button className = "button" onClick = {props.handleClickNext} style = {nextAndPreviousStyle}> Next {'>'} </button>
                 </h1>
         </div>
